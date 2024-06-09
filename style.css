@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background: url("Images/2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    background-color: rgb(0, 89, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+header form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+header input, header select, header button {
+    flex: 3;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+header button {
+    background-color: white;
+    color: rgb(0, 89, 0);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover{
+    background-color: orange;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+li .task-text {
+    flex: 1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li.completed .task-text {
+    text-decoration: line-through;
+}
+
+li .task-priority {
+    flex-shrink: 0;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+li .task-priority.low {
+    background: #28a745;
+}
+
+li .task-priority.medium {
+    background: #ffc107;
+}
+
+li .task-priority.high {
+    background: #dc3545;
+}
+
+li .edit-btn, li .delete-btn {
+    background: #37006b;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+li .edit-btn:hover, li .delete-btn:hover {
+    background: #00b9bc;
+}

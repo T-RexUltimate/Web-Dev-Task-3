@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Icon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ensure Nothing Gets Forgotten</h1>
+            <form id="new-task-form">
+                <input type="text" id="new-task-input" placeholder="Prioritize What Matters?" required>
+                <select id="task-priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </header>
+        <main>
+            <ul id="tasks"></ul>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
